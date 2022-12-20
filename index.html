@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="_reset.css">
     <title>Alura Books</title>
@@ -52,6 +53,39 @@
         <p class="banner__texto">Encontre em nossa estante o que precisa para seu desenvolvimento</p>
         <input class="banner__busca" type="search" placeholder="Qual será sua próxima leitura?">
     </section>
+
+    <section class="carrossel">
+        <h2 class="carrossel__titulo">Últimos lançamentos</h2>
+
+        <div class="swiper">
+
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide"><img src="img/Acessibilidade.svg"></div>
+                <div class="swiper-slide"><img src="img/Arquitetura.svg"></div>
+                <div class="swiper-slide"><img src="img/Guia Front-end.svg"></div>
+                <div class="swiper-slide"><img src="img/Gestão.svg"></div>
+                <div class="swiper-slide"><img src="img/Javascript.svg"></div>
+                <div class="swiper-slide"><img src="img/Liderança.svg"></div>
+                <div class="swiper-slide"><img src="img/Nodejs.svg"></div>
+
+            </div>
+
+            <div class="swiper-pagination"></div>
+
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <div class="swiper-scrollbar"></div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            spaceBetween: 10,
+            slidesPerView: 3
+        });
+    </script>
 </body>
 
 </html>
