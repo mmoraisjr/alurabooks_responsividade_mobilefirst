@@ -51,7 +51,8 @@
     background-clip: text;
     text-transform: uppercase;
 }
-.container__botao, .container__titulo{
+
+.container__botao, .container__titulo {
     display: none;
 }
 
@@ -87,12 +88,28 @@
 
     .container__item {
         padding: .5rem 1rem;
+        text-transform: uppercase;
+        position: relative;
     }
 
     .container__link {
-        text-transform: uppercase;
         text-decoration: none;
         color: var(--preto);
         cursor: pointer;
+    }
+
+    .container__categoria {
+        display: none;
+    }
+
+    .container__categoria:checked~.lista-menu {
+        display: block;
+    }
+
+    .lista-menu {
+        position: absolute;
+        top: 100%;
+        left: 35%;
+        width: auto;
     }
 }
