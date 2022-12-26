@@ -23,6 +23,10 @@
     padding: .7rem;
 }
 
+.container__menu {
+    display: none;
+}
+
 .lista-menu {
     display: none;
     position: absolute;
@@ -76,6 +80,7 @@
     }
 
     .container__menu {
+        display: block;
         align-self: center;
     }
 

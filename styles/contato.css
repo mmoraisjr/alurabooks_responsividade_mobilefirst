@@ -26,3 +26,27 @@
 .contato__titulo {
     font-weight: bold;
 }
+
+@media screen and (min-width: 1024px) {
+
+    .contato {
+        display: flex;
+        justify-content: center;
+        padding: 1.5rem  8rem;
+    }
+
+    .contato__texto {
+        padding-left: 5rem;
+    }
+
+    .contato__titulo{
+        font-size: 1.5rem;
+        padding-bottom: 1rem;
+    }
+
+    .contato__cadastro {
+        width: 50%;
+        height: 40%;
+    }
+
+}

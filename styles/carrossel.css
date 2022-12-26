@@ -86,3 +86,27 @@
     color: var(--laranja);
     padding-bottom: 1rem;
 }
+
+@media screen and (min-width: 1024px) {
+
+    .titulo {
+        font-size: 26px;
+    }
+
+    .swiper-pagination {
+        margin: 2rem 0;
+    }
+
+    .swiper {
+        width: 60%;
+    }
+
+    .swiper-button-prev, .swiper-button-next {
+        display: block;
+    }
+
+    .card {
+        width: 40%;
+        margin: 1rem auto 2rem;
+    }
+}
