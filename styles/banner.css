@@ -45,3 +45,10 @@
     }
 
 }
+
+@media screen and (min-width: 1730px) {
+    .banner__busca {
+        width: 30%;
+    }
+
+}
