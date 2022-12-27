@@ -2,3 +2,55 @@
     padding: 1rem 1.5rem 1.5rem 1.5rem;
     font-weight: bold;
 }
+
+.lista-rodape {
+    display: none;
+}
+
+@media screen and (min-width: 1024px) {
+
+    .rodape {
+        display: flex;
+        justify-content: space-between;
+        padding: 1.5rem;
+    }
+
+    .rodape__titulo {
+        font-size: 1.5rem;
+    }
+
+    .lista-rodape {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .lista-rodape div {
+        padding: 0 2rem;
+    }
+
+    .lista-rodape__titulo {
+        padding: 0 0 1.5rem 0;
+        text-transform: uppercase;
+        font-weight: 400;
+    }
+
+    .lista-rodape__item {
+        display: flex;
+        align-items: center;
+    }
+    
+    .lista-rodape__item {
+        padding: .5rem 0;
+    }
+    
+    .lista-rodape__item img {
+        padding: 0 .5rem;
+    }
+    
+    .lista-rodape__link {
+        text-decoration: none;
+        color: var(--cinza);
+        font-weight: 400;
+    }
+
+}
